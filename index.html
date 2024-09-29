@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- tailwind& daisy -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              primary: "#B4F461",
+            },
+            fontFamily: {
+              lexend: ["Lexend", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-lexend">
+    <header class="sticky top-0 z-10  bg-white opacity-85 backdrop-blur-md">
+      <nav class="bg-orange-50 pt-2 pb-12 mx-auto">
+        <div class="navbar w-11/12 mx-auto">
+          <div class="navbar-start w-auto ">
+            <button class="btn bg-primary  text-base md:text-xl md:font-bold font-semibold px-4 py-0 md:px-8 rounded-lg border-none hover:bg-primary">
+              Blog
+            </button>
+            <button class="btn bg-primary text-base md:text-xl md:font-bold font-semibold px-4 md:px-8 rounded-lg hidden border-none hover:bg-primary">
+              Home
+            </button>
+           
+          </div>
+          <div class="navbar-center mx-auto">
+            <div class=" flex items-center gap-2 md:gap-3"><img src="./assets/logo.png" class=" w-8 h-8 md:w-10 md:h-10" alt="" /> <span  class=" text-base font-semibold md:text-xl md:font-bold  md:hidden">Donate <br> Bangladesh</span>
+                <span  class=" text-base font-semibold md:text-xl md:font-bold hidden md:block">Donate Bangladesh</span>
+                </div>
+            
+          </div>
+          <div class="navbar-end w-auto">
+           <p class="flex gap-1 "><img class="w-5 h-5 md:w-6 md:h-6 md:mr-1" src="./assets/coin.png" alt="" srcset=""><span class=" text-base md:text-xl font-semibold text-gray-500">5500</span><span class="text-base md:text-xl font-semibold text-gray-500">BDT</span></p>
+              </div>
+            
+          </div>
+        </div>
+      </nav>
+      <div  class="flex justify-center items-center gap-4 mx-auto  mt-14">
+        <button class="btn bg-primary  text-base md:text-xl md:font-bold font-semibold px-7 rounded-lg hover:bg-primary border-none " onclick="window.location.href='#donation-page';">
+            Donation
+          </button>
+          <button class="btn  text-base md:text-xl md:font-bold font-semibold px-8 rounded-lg  text-gray-500 border-gray-300 bg-white">
+            History
+          </button>
+      </div>
+    </header>
+    <main class="w-10/12 mx-auto" id="donation-page">
+        <div class="card lg:card-side bg-base-100  border-gray-100 border-2 lg:p-10 p-6 my-11 gap-2 lg:gap-0 ">
+            
+                <div class=" w-full lg:w-1/2"><img
+                    src="./assets/noakhali.png"
+                    alt="flood" /></div>
+              
+            
+            
+            <div class="card-body w-full lg:w-1/2 gap-5 p-0">
+                <div><button class="btn"><img class=" w-6 mr-1" src="./assets/coin.png" alt="" srcset=""><span class=" text-base font-medium text-gray-500">0</span><span class="text-base font-medium text-gray-500">BDT</span></button></div>
+              <h2 class=" text-xl font-bold text-black">Donate for Flood at Noakhali, Bangladesh</h2>
+              <p class="text-base font-light text-gray-500"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+              <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full text-base font-light" />
+                <button class="btn bg-primary text-base md:text-xl md:font-bold font-semibold hover:bg-primary border-none h-0 py-3">Donate Now</button>
+              
+            </div>
+          </div>
+        <div class="card lg:card-side bg-base-100  border-gray-100 border-2 lg:p-10 p-6 my-7 gap-2 lg:gap-0 ">
+            
+                <div class=" w-full lg:w-1/2"><img
+                    src="./assets/feni.png"
+                    alt="flood" /></div>
+              
+            
+            
+            <div class="card-body w-full lg:w-1/2 gap-5 p-0">
+                <div><button class="btn"><img class=" w-6 mr-1" src="./assets/coin.png" alt="" srcset=""><span class=" text-base font-medium text-gray-500">600</span><span class="text-base font-medium text-gray-500">BDT</span></button></div>
+              <h2 class=" text-xl font-bold text-black">Donate for Flood Relief in Feni,Bangladesh</h2>
+              <p class="text-base font-light text-gray-500"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+              <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full text-base font-light" />
+                <button class="btn bg-primary text-base md:text-xl md:font-bold font-semibold hover:bg-primary border-none h-0 py-3">Donate Now</button>
+              
+            </div>
+          </div>
+        <div class="card lg:card-side bg-base-100  border-gray-100 border-2 lg:p-10 p-6 my-7 gap-2 lg:gap-0 " id="">
+            
+                <div class=" w-full lg:w-1/2"><img
+                    src="./assets/quota-protest.png"
+                    alt="flood" /></div>
+              
+            
+            
+            <div class="card-body w-full lg:w-1/2 gap-5 p-0">
+                <div><button class="btn"><img class=" w-6 mr-1" src="./assets/coin.png" alt="" srcset=""><span class=" text-base font-medium text-gray-500">2400</span><span class="text-base font-medium text-gray-500">BDT</span></button></div>
+              <h2 class=" text-xl font-bold text-black">Aid for Injured in the Quota Movement</h2>
+              <p class="text-base font-light text-gray-500"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+              <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full text-base font-light" />
+                <button class="btn bg-primary text-base md:text-xl md:font-bold font-semibold hover:bg-primary border-none h-0 py-3">Donate Now</button>
+              
+            </div>
+          </div>
+          <!-- history -->
+           <section>
+            
+           </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
